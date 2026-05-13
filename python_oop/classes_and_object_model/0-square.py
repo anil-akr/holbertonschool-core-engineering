@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""Defines a Square class."""
+
 
 class Square:
-    def __init__(self, size=0):
-        self.size = size
+    """Represents a square."""
+    pass
