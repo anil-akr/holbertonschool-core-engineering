@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-import string
-
-result = ""
-
-for letter in string.ascii_lowercase:
-    if letter not in "qe":
-        result = result + letter
-
-print(result)
+for letter in range(ord('a'), ord('z') + 1):
+    if chr(letter) != 'q' and chr(letter) != 'e':
+        print("{}".format(chr(letter)), end="")
