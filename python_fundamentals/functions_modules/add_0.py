@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Define add() and run it only when the file is executed directly."""
+"""Provide a simple add() function to be imported by other files."""
 
 
 def add(a, b):
@@ -13,7 +13,3 @@ def add(a, b):
         The sum of a and b.
     """
     return a + b
-
-
-if __name__ == "__main__":
-    print(add(3, 5))
