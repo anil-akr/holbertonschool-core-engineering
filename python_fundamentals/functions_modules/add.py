@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Import add() from add_0 and display the result of 1 + 2.
+"""Display the result of 1 + 2 using an imported add() function.
 
-The computation runs only when this file is executed directly, never when
-it is imported (it is protected by the __main__ guard).
+The computation runs only when this file is run directly, never when it is
+imported (it is protected by the __main__ guard).
 """
 
 from add_0 import add
