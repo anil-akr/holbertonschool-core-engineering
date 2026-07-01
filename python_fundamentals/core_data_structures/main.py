@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-add_tuple = __import__('add_tuple').add_tuple
+update_dictionary = __import__('update_dictionary').update_dictionary
 
-print(add_tuple((1, 89), (88, 11)))
-print(add_tuple((1, 89), (1, )))
-print(add_tuple((1, 89), ()))
-print(add_tuple((), ()))
+d = {'language': 'C', 'number': 89, 'track': 'Low level'}
+print(update_dictionary(d, 'language', 'Python'))
+print(update_dictionary(d, 'city', 'San Francisco'))
