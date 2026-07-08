@@ -2,6 +2,7 @@
 """This class represents a foundational concept for geometric shapes.
 It defines behavior that other shape classes will build upon"""
 
+
 class BaseGeometry:
     """Base class for geometric shapes."""
 
@@ -15,4 +16,3 @@ class BaseGeometry:
 
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-
