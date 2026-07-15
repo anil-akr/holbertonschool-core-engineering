@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """A minimal WebSocket client built with the websockets library."""
 
+import os
 import asyncio
 from websockets.asyncio.client import connect
 
@@ -15,8 +16,8 @@ async def connect_and_send(uri: str, text: str) -> str:
 
 async def main():
     """Send one message to the server and print its reply."""
-    uri = "ws://localhost:8765"
-    message = "Hello WebSocket"
+    uri = os.environ.get("WS_URI", "ws://localhost:8765")
+    message = "demo"
     response = await connect_and_send(uri, message)
     print(response, end="")
 
